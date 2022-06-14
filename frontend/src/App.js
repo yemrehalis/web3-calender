@@ -49,7 +49,7 @@ function App() {
         <p id="slogan">web3 appointment scheduler</p>
       </header>
       {!account && <button onClick={connect} >connect wallet</button>}
-      {account && <Calendar />}
+      {account && <Calendar account={account} />}
     </div>
   );
 }
